@@ -13,6 +13,7 @@ func main() {
 	appinit.InitializeDB()
 	routes.HubRoutes(server)
 	routes.InventoryRoutes(server)
+	routes.SKUroutes(server)
 	err1 := server.StartServer("WMS")
 
 	if err1 != nil {
